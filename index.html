@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="pastel">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/css/all.min.css">
+  <title>Vite App</title>
+</head>
+
+<body class="bg-base-300 min-h-screen">
+
+  <label id="theme-toggle"
+    class="swap swap-rotate bg-primary-content text-primary w-12 h-12 rounded-full shadow fixed top-2 right-2 z-50">
+    <!-- this hidden checkbox controls the state -->
+    <input type="checkbox" checked />
+    <!-- sun icon -->
+    <i class="swap-on fa-duotone fa-sun text-xl"></i>
+    <!-- moon icon -->
+    <i class="swap-off fa-duotone fa-moon text-xl"></i>
+  </label>
+
+  <div data-scroll-container>
+    <div class="fixed w-full flex items-center justify-center gap-6 px-2 py-6 bg-base-200 shadow-xl z-40 top-0"
+      data-scroll-section>
+      <a href="#home" data-scroll-to>Home</a>
+      <a href="#images" data-scroll-to>Images</a>
+      <a href="#about" data-scroll-to>About</a>
+      <a href="#promises" data-scroll-to>Promises</a>
+      <a href="#splitted" data-scroll-to>Splitted</a>
+    </div>
+    <!-- Screen 1 -->
+    <div class="w-full h-screen p-4 md:p-6 xl:p-8 flex items-center justify-center flex-col gap-2" data-scroll-section
+      id="home">
+      <h1 class="font-black text-3xl md:text-5xl xl:text-7xl" data-scroll data-scroll-speed="3">
+        TailwindCSS + DaisyUI =
+        <i class="fa-duotone fa-fire"></i>
+      </h1>
+      <h2 class="font-black text-2xl md:text-4xl xl:text-6xl opacity-70" data-scroll data-scroll-speed="2">
+        Flexible CSS by TailwindCSS
+      </h2>
+      <h3 class="font-black text-xl md:text-3xl xl:text-5xl opacity-50" data-scroll data-scroll-speed="1">
+        Beautiful components by DaisyUI
+      </h3>
+    </div>
+    <!-- Screen 2 -->
+    <div class="w-full h-screen p-4 md:p-6 xl:p-8 flex items-center justify-center flex-col gap-6" data-scroll-section
+      id="images">
+      <div data-scroll data-scroll-speed="-2">
+        <div
+          class="max-w-lg flex flex-col items-center md:flex-row gap-3 p-4 shadow-lg bg-base-200 md:translate-x-40 border-8 border-secondary rounded-2xl">
+          <img src="public/3d-icons/set1/rocket.png" alt="" width="200">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi velit hic a exercitationem aliquam
+            temporibus
+            sit veritatis ipsa culpa sequi, magni, explicabo qui, voluptatem aperiam ipsam odio at nisi esse?</p>
+        </div>
+      </div>
+      <div data-scroll data-scroll-speed="5">
+        <div
+          class="max-w-lg flex flex-col items-center md:flex-row gap-3 p-4 shadow-lg bg-base-100 md:-translate-x-36 scale-150 border-8 border-secondary-focus rounded-2xl">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi velit hic a exercitationem aliquam
+            temporibus
+            sit veritatis ipsa culpa sequi, magni, explicabo qui, voluptatem aperiam ipsam odio at nisi esse?</p>
+          <img src="public/3d-icons/set2/charts.png" alt="" width="200">
+        </div>
+      </div>
+    </div>
+    <!-- Screen 3 -->
+    <div class="w-full p-4 md:p-6 xl:p-8 flex items-center justify-center flex-col gap-6" data-scroll-section>
+      <div class="max-w-3xl mx-auto flex gap-3 items-start p-6" id="about">
+        <h3 class="flex-shrink-0 text-3xl font-bold text-center " data-scroll data-scroll-sticky
+          data-scroll-target="#about">
+          About
+          <img src="public/3d-icons/set2/bulb.png" alt="" width="200">
+        </h3>
+        <div class="flex flex-col gap-4 text-xl">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eius facilis velit vero cum. Quae natus
+            adipisci officiis doloribus rerum saepe totam? Vitae mollitia temporibus quo, blanditiis natus inventore
+            nam?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eius facilis velit vero cum. Quae natus
+            adipisci officiis doloribus rerum saepe totam? Vitae mollitia temporibus quo, blanditiis natus inventore
+            nam?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eius facilis velit vero cum. Quae natus
+            adipisci officiis doloribus rerum saepe totam? Vitae mollitia temporibus quo, blanditiis natus inventore
+            nam?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eius facilis velit vero cum. Quae natus
+            adipisci officiis doloribus rerum saepe totam? Vitae mollitia temporibus quo, blanditiis natus inventore
+            nam?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eius facilis velit vero cum. Quae natus
+            adipisci officiis doloribus rerum saepe totam? Vitae mollitia temporibus quo, blanditiis natus inventore
+            nam?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eius facilis velit vero cum. Quae natus
+            adipisci officiis doloribus rerum saepe totam? Vitae mollitia temporibus quo, blanditiis natus inventore
+            nam?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eius facilis velit vero cum. Quae natus
+            adipisci officiis doloribus rerum saepe totam? Vitae mollitia temporibus quo, blanditiis natus inventore
+            nam?</p>
+        </div>
+      </div>
+    </div>
+    <!-- Screen 4 -->
+    <div class="w-full h-screen p-4 md:p-6 xl:p-8 flex items-center justify-center flex-col gap-6" data-scroll-section
+      id="promises">
+      <div class="bg-primary-content text-accent p-6 font-black text-5xl uppercase tracking-wider shadow-md" data-scroll
+        data-scroll-speed="20" data-scroll-target="#promises" data-scroll-direction="horizontal">
+        This code is too complecated for me
+      </div>
+      <div class="text-primary-content bg-accent p-6 font-black text-4xl uppercase tracking-wider shadow-lg" data-scroll
+        data-scroll-speed="-20" data-scroll-target="#promises" data-scroll-direction="horizontal">
+        ...but i promise i will try my best to handle it
+      </div>
+    </div>
+
+    <!-- Screen 5 -->
+    <div class="w-full h-screen p-4 md:p-6 xl:p-8 flex items-center justify-center flex-col gap-6" data-scroll-section
+      id="splitted">
+      <div class="text-6xl font-black uppercase">
+        <span class="inline-block" data-scroll data-scroll-speed="4">S</span>
+        <span class="inline-block" data-scroll data-scroll-speed="8">P</span>
+        <span class="inline-block" data-scroll data-scroll-speed="1">L</span>
+        <span class="inline-block" data-scroll data-scroll-speed="5">I</span>
+        <span class="inline-block" data-scroll data-scroll-speed="7">T</span>
+        <span class="inline-block" data-scroll data-scroll-speed="2">T</span>
+        <span class="inline-block" data-scroll data-scroll-speed="6">E</span>
+        <span class="inline-block" data-scroll data-scroll-speed="3">D</span>
+      </div>
+    </div>
+    <!-- Screen 6 -->
+    <div class="w-full h-screen p-4 md:p-6 xl:p-8 flex items-center justify-center flex-col gap-6" data-scroll-section>
+    </div>
+  </div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
